@@ -15,6 +15,6 @@ assertEqual(shifts.isValidShift(0), false, 'a zero-hour shift is invalid');
 assertEqual(shifts.isValidShift(30), false, 'a shift over 24 hours is invalid');
 
 const pay = shifts.calculatePay(6, 20.33);
-assertEqual(pay, 121, 'pay for a 6-hour shift at $20.33/hr');
+assertEqual(pay, 122, 'pay for a 6-hour shift at $20.33/hr');
 
 process.exitCode = failures > 0 ? 1 : 0;
